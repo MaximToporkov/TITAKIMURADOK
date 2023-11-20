@@ -3,7 +3,7 @@ import sqlite3
 
 from DB.db_select import select_cat_for_insert_auto
 
-PATH = r"C:\Users\SAZol\PycharmProjects\Max_corsach\TITAKIMURADOK\DB\db_pc_con.sqlite"
+PATH = r"D:\Work\Учеба\2 курсовая\pp\DB\db_pc_con.sqlite"
 def insert(funk):
     def wrapper(*args):
         funk(*args)

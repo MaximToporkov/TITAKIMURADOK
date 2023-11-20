@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>945</width>
+    <width>820</width>
     <height>330</height>
    </rect>
   </property>
@@ -26,9 +26,9 @@
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>70</x>
       <y>40</y>
-      <width>800</width>
+      <width>611</width>
       <height>241</height>
      </rect>
     </property>
@@ -48,7 +48,7 @@
     </column>
     <column>
      <property name="text">
-      <string>Телефон</string>
+      <string>Мастер</string>
      </property>
     </column>
     <column>
@@ -63,24 +63,19 @@
     </column>
     <column>
      <property name="text">
-      <string>Номер прав</string>
+      <string>Номер_пк</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Бренд</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Марка</string>
+      <string>Цена</string>
      </property>
     </column>
    </widget>
    <widget class="QPushButton" name="add_user">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>50</x>
       <y>10</y>
       <width>131</width>
       <height>23</height>
@@ -96,7 +91,7 @@
    <widget class="QPushButton" name="add_car">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>230</x>
       <y>10</y>
       <width>141</width>
       <height>23</height>
@@ -112,7 +107,7 @@
    <widget class="QPushButton" name="add_order">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>420</x>
       <y>10</y>
       <width>131</width>
       <height>23</height>
@@ -128,7 +123,7 @@
    <widget class="QPushButton" name="show_user_butt">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>600</x>
       <y>10</y>
       <width>131</width>
       <height>23</height>
@@ -141,29 +136,13 @@
      <string>показать клиентов</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="show_car_butt">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>10</y>
-      <width>131</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(167, 168, 167)</string>
-    </property>
-    <property name="text">
-     <string>показать заказ</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>945</width>
+     <width>820</width>
      <height>22</height>
     </rect>
    </property>
@@ -173,8 +152,6 @@
     </property>
     <addaction name="actionC"/>
     <addaction name="action_3"/>
-    <addaction name="add_model"/>
-    <addaction name="add_brand"/>
    </widget>
    <addaction name="menuProgram"/>
   </widget>

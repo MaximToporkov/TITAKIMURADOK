@@ -1,7 +1,7 @@
 import sqlite3
 
 
-PATH = r"C:\Users\SAZol\PycharmProjects\Max_corsach\TITAKIMURADOK\DB\db_pc_con.sqlite"
+PATH = r"D:\Work\Учеба\2 курсовая\pp\DB\db_pc_con.sqlite"
 
 def select_cat():
     con = sqlite3.connect(PATH)

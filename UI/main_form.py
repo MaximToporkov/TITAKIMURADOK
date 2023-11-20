@@ -24,7 +24,7 @@ class MainForm(QMainWindow):
         self.add_brand.triggered.connect(self.__open_add_brand)
         self.add_order.clicked.connect(self.__open_add_order)
         self.show_user_butt.clicked.connect(self.__show_user)
-        self.show_car_butt.clicked.connect(self.__show_car)
+        #self.show_car_butt.clicked.connect(self.__show_car)
         #self.__show_order()
 
     def __open_add_user(self) -> None:
@@ -137,14 +137,6 @@ class AddModel(QDialog):
         loadUi("model_add_form.ui", self)
         self.add_model_but.clicked.connect(self.__add_model)
 
-    # def __add_model(self):
-    #     model = self.model.text()
-    #     if model:
-    #         if REC:
-    #             add_model_db(model)
-    #         main_form = MainForm()
-    #         widget.addWidget(main_form)
-    #         widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
 
@@ -154,15 +146,6 @@ class AddBrand(QDialog):
         super(AddBrand, self).__init__()
         loadUi("brand_add_form.ui", self)
         self.add_brand_but.clicked.connect(self.__add_brand)
-
-    # def __add_brand(self):
-    #     brand = self.brand.text()
-    #     if brand:
-    #         if REC:
-    #             add_brand_db(brand)
-    #         main_form = MainForm()
-    #         widget.addWidget(main_form)
-    #         widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
 
@@ -201,8 +184,6 @@ class AddOrder(QDialog):
         col = self.comboBox_4.currentText()
         power = self.comboBox_5.currentText()
 
-        #cost = self.__cacalculate_price()
-        #cout_hour = self.cout_hour.text()
         if REC:
             add_pc_db(cpu, gpu, ram, mother, hdd, col, power)
             add_order_db(select_master(), select_user(), select_pc(), select_price())
@@ -210,17 +191,6 @@ class AddOrder(QDialog):
         widget.addWidget(main_form)
         widget.setCurrentIndex(widget.currentIndex() + 1)
 
-
-    # def __show_auto(self):
-    #     self.tableWidget.clear()
-    #     row_index = 0
-    #     for auto in select_auto(self.brand.currentText(), self.model.currentText()):
-    #         self.tableWidget.setRowCount(row_index + 1)
-    #         self.tableWidget.setItem(row_index, 0, QTableWidgetItem(str(auto[1])))
-    #         self.tableWidget.setItem(row_index, 1, QTableWidgetItem(str(auto[5])))
-    #         self.tableWidget.setItem(row_index, 2, QTableWidgetItem(str(auto[3])))
-    #         self.tableWidget.setItem(row_index, 3, QTableWidgetItem(str(auto[7])))
-    #         row_index += 1
 
 
     def __cacalculate_price(self):
@@ -260,15 +230,7 @@ class AutoShow(QDialog):
         super(AutoShow, self).__init__()
         loadUi("auto_form.ui", self)
         self.exit.clicked.connect(self.__exit)
-        row_index = 0
-        # for auto in select_auto_for_form():
-        #     self.tableWidget.setRowCount(row_index + 1)
-        #     self.tableWidget.setItem(row_index, 0, QTableWidgetItem(str(auto[0])))
-        #     self.tableWidget.setItem(row_index, 1, QTableWidgetItem(str(auto[1])))
-        #     self.tableWidget.setItem(row_index, 2, QTableWidgetItem(str(auto[2])))
-        #     self.tableWidget.setItem(row_index, 3, QTableWidgetItem(str(auto[3])))
-        #     self.tableWidget.setItem(row_index, 4, QTableWidgetItem(str(auto[4])))
-        #     row_index += 1
+
 
     def __exit(self):
         main_form = MainForm()

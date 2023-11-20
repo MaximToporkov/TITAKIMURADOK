@@ -130,7 +130,7 @@
     <string notr="true">background-color:rgb(167, 168, 167); font-size:11pt;</string>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Принять</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_3">
