@@ -101,27 +101,6 @@
     <string>Фамилия:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>130</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:rgb(255, 255, 255)</string>
-   </property>
-   <property name="text">
-    <string>Номер прав:</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="number">
    <property name="geometry">
     <rect>
@@ -153,19 +132,6 @@
     <rect>
      <x>150</x>
      <y>100</y>
-     <width>181</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:rgb(243, 243, 243)</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="drive_licen">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>130</y>
      <width>181</width>
      <height>20</height>
     </rect>
